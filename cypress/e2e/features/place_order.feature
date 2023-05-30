@@ -3,3 +3,4 @@ Feature: Place an order on Amazon.in
     Given I am on the Amazon.in homepage
     When I search for "Samsung galaxy"
     And I select the first search result
+    

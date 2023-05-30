@@ -10,7 +10,7 @@ Given('I am on the Amazon.in homepage', () => {
 When('I search for {string}', (item) => {
   // Enter search query and perform search
   cy.get('#twotabsearchtextbox').type(`${item}{enter}`);
-  
+  cy.viewport(1024, 768);
 });
 
 When('I select the first search result', () => {
@@ -23,10 +23,12 @@ When('I select the first search result', () => {
     console.log('Extracted URL:', href);
     // cy.visit(href);
   });
+  cy.wait(5000);
 });
 
 When('I add the item to the cart', () => {
   // Add the item to the cart
+ // cy.wait('#add-to-cart-button');
   cy.get('#add-to-cart-button').click();
 });
 
