@@ -1,0 +1,7 @@
+# comment
+*/temp*
+*/*/temp*
+temp?
+cypress/node_modules
+*/cypress/node_modules
+**/Cypress/node_modules
